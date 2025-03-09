@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF73696F2D7CDD6E005889E8 /* ApplicationStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */; };
-		BF7369712D7CDD6E005889E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369702D7CDD6E005889E8 /* ContentView.swift */; };
+		BF7369712D7CDD6E005889E8 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369702D7CDD6E005889E8 /* CreateAccount.swift */; };
 		BF7369732D7CDD71005889E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7369722D7CDD71005889E8 /* Assets.xcassets */; };
 		BF7369762D7CDD71005889E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7369752D7CDD71005889E8 /* Preview Assets.xcassets */; };
 		BF7369802D7CDD71005889E8 /* ApplicationStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73697F2D7CDD71005889E8 /* ApplicationStationTests.swift */; };
@@ -20,6 +20,8 @@
 		BF7369A32D7CEB02005889E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF7369A22D7CEB02005889E8 /* GoogleService-Info.plist */; };
 		BF7369A52D7CED2C005889E8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369A42D7CED2C005889E8 /* LoginView.swift */; };
 		BF7369A72D7CF1B8005889E8 /* RagChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369A62D7CF1B8005889E8 /* RagChat.swift */; };
+		BF7369AB2D7D169F005889E8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369AA2D7D169F005889E8 /* DataManager.swift */; };
+		BF7369AD2D7D1BC3005889E8 /* MessageStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369AC2D7D1BC3005889E8 /* MessageStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 /* Begin PBXFileReference section */
 		BF73696B2D7CDD6E005889E8 /* ApplicationStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStationApp.swift; sourceTree = "<group>"; };
-		BF7369702D7CDD6E005889E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF7369702D7CDD6E005889E8 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		BF7369722D7CDD71005889E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF7369752D7CDD71005889E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF73697B2D7CDD71005889E8 /* ApplicationStationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationStationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,8 @@
 		BF7369A22D7CEB02005889E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF7369A42D7CED2C005889E8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BF7369A62D7CF1B8005889E8 /* RagChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagChat.swift; sourceTree = "<group>"; };
+		BF7369AA2D7D169F005889E8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BF7369AC2D7D1BC3005889E8 /* MessageStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,10 @@
 				BF7369A22D7CEB02005889E8 /* GoogleService-Info.plist */,
 				BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */,
 				BF7369A02D7CE9ED005889E8 /* AuthManager.swift */,
-				BF7369702D7CDD6E005889E8 /* ContentView.swift */,
+				BF7369702D7CDD6E005889E8 /* CreateAccount.swift */,
 				BF7369A62D7CF1B8005889E8 /* RagChat.swift */,
+				BF7369AA2D7D169F005889E8 /* DataManager.swift */,
+				BF7369AC2D7D1BC3005889E8 /* MessageStruct.swift */,
 				BF7369A42D7CED2C005889E8 /* LoginView.swift */,
 				BF7369722D7CDD71005889E8 /* Assets.xcassets */,
 				BF7369742D7CDD71005889E8 /* Preview Content */,
@@ -289,10 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7369712D7CDD6E005889E8 /* ContentView.swift in Sources */,
+				BF7369712D7CDD6E005889E8 /* CreateAccount.swift in Sources */,
+				BF7369AB2D7D169F005889E8 /* DataManager.swift in Sources */,
 				BF7369A12D7CE9ED005889E8 /* AuthManager.swift in Sources */,
 				BF7369A52D7CED2C005889E8 /* LoginView.swift in Sources */,
 				BF7369A72D7CF1B8005889E8 /* RagChat.swift in Sources */,
+				BF7369AD2D7D1BC3005889E8 /* MessageStruct.swift in Sources */,
 				BF73696F2D7CDD6E005889E8 /* ApplicationStationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

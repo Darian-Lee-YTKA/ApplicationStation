@@ -61,13 +61,7 @@ struct LoginView: View {
                         .cornerRadius(8)
                 }
                 
-                Button(action: {
-                    // Handle sign-up action
-                }) {
-                    Text("Don't have an account? Sign up")
-                        .foregroundColor(lightBlue)
-                        .font(.footnote)
-                }
+              
             }
             .padding()
             .alert(isPresented: $showAlert) {

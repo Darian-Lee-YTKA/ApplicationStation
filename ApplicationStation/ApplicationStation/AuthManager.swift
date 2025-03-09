@@ -12,11 +12,18 @@ import FirebaseAuth
 
 class AuthManager: ObservableObject{ // Conform to ObservableObject
 
-    var user: User? // Use @Published for observable properties
+    @Published var user: User? = nil
+
 
     init() {
 
         self.user = Auth.auth().currentUser
+
+ 
+                Auth.auth().addStateDidChangeListener { _, user in
+                    self.user = user
+                }
+            
     }
 
     // https://firebase.google.com/docs/auth/ios/start#sign_up_new_users
