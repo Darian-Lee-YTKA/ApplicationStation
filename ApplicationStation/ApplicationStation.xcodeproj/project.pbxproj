@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0F764C2D7E6BFE00F6FBA3 /* RagAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F764B2D7E6BFC00F6FBA3 /* RagAPI.swift */; };
 		BF73696F2D7CDD6E005889E8 /* ApplicationStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */; };
 		BF7369712D7CDD6E005889E8 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7369702D7CDD6E005889E8 /* CreateAccount.swift */; };
 		BF7369732D7CDD71005889E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7369722D7CDD71005889E8 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF0F764B2D7E6BFC00F6FBA3 /* RagAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagAPI.swift; sourceTree = "<group>"; };
 		BF73696B2D7CDD6E005889E8 /* ApplicationStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF73696E2D7CDD6E005889E8 /* ApplicationStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStationApp.swift; sourceTree = "<group>"; };
 		BF7369702D7CDD6E005889E8 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BF7369AA2D7D169F005889E8 /* DataManager.swift */,
 				BF7369AC2D7D1BC3005889E8 /* MessageStruct.swift */,
 				BF7369A42D7CED2C005889E8 /* LoginView.swift */,
+				BF0F764B2D7E6BFC00F6FBA3 /* RagAPI.swift */,
 				BF7369722D7CDD71005889E8 /* Assets.xcassets */,
 				BF7369742D7CDD71005889E8 /* Preview Content */,
 			);
@@ -297,6 +300,7 @@
 			files = (
 				BF7369712D7CDD6E005889E8 /* CreateAccount.swift in Sources */,
 				BF7369AB2D7D169F005889E8 /* DataManager.swift in Sources */,
+				BF0F764C2D7E6BFE00F6FBA3 /* RagAPI.swift in Sources */,
 				BF7369A12D7CE9ED005889E8 /* AuthManager.swift in Sources */,
 				BF7369A52D7CED2C005889E8 /* LoginView.swift in Sources */,
 				BF7369A72D7CF1B8005889E8 /* RagChat.swift in Sources */,

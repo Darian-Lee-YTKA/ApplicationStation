@@ -66,14 +66,27 @@ struct RagChat: View {
                 
                 Button(action: {
                     if !userMessage.isEmpty {
+                        // turning the string into Message type with timestamp
                         let newMessage = Message(message: "User: " + userMessage, timeStamp: Timestamp(date: Date()))
-                        dataManager.saveMessages(new_message: newMessage) {
-                            userMessage = ""
-                            dataManager.loadMessages {
-  
+                                RagAPI().askQuestion(question: newMessage.message) { answer in
+                                    // turning the string into Message type with timestamp
+                                    let cleanAnswer = (answer ?? "")
+                                        .replacingOccurrences(of: "Answer: ", with: "")
+                                        .replacingOccurrences(of: "User:", with: "")
+                                    let newAnswer = Message(message: "AI: " + cleanAnswer, timeStamp: Timestamp(date: Date()))
+                                    
+                                    // saving the AI's response
+                                    dataManager.saveMessages(messages: [newMessage, newAnswer]) {
+                                        // loading the messages again so the users message shows on screen
+                                        dataManager.loadMessages {
+                                            userMessage = ""
+                                            
+                                        }
+                                    }
+                                }
                             }
-                        }
-                    }
+                        
+                    
                 }) {
                     Text("Send")
                         .padding()

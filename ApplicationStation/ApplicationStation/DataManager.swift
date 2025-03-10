@@ -68,19 +68,20 @@ class DataManager: ObservableObject {
     // gets the list of messages under Users/user_id/RagMessages
     //appends the given message to the list
     // saves the list
-    func saveMessages(new_message:Message, completion: @escaping () -> Void){
+    func saveMessages(messages:[Message], completion: @escaping () -> Void){
         guard var userID = Auth.auth().currentUser?.uid else {
             print("no user id found")
             completion()
             return
         }
         
-
-        let messageData: [String: Any] = [
-            "message": new_message.message,
-            "timestamp": new_message.timeStamp
+        for message in messages{
+            
+            let messageData: [String: Any] = [
+                "message": message.message,
+                "timestamp": message.timeStamp
             ]
-        database.collection("Users").document(userID).collection("RagMessages")
+            database.collection("Users").document(userID).collection("RagMessages")
                 .addDocument(data: messageData) { error in
                     if let error = error {
                         print("Error saving message: \(error)")
@@ -90,6 +91,7 @@ class DataManager: ObservableObject {
                     completion()
                 }
         }
+    }
         
         
         

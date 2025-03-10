@@ -26,8 +26,8 @@ struct CreateAccount: View {
                                 Image(images[index])
                                     .resizable()
                                     .scaledToFill()
-                                    .frame(width: UIScreen.main.bounds.width, height: 200)
-                                    .clipShape(RoundedRectangle(cornerRadius: 25)) // Круглые углы
+                                    .frame(width: UIScreen.main.bounds.width, height: 250)
+                                    //.clipShape(RoundedRectangle(cornerRadius: 25)) // Круглые углы
 
                                     .clipped()
                                     .tag(index)  // Устанавливаем тег для каждого изображения
@@ -35,6 +35,7 @@ struct CreateAccount: View {
                         }
                         .tabViewStyle(PageTabViewStyle())
                         .frame(height: 200)
+                        .cornerRadius(25)
                         .onReceive(timer) { _ in
                             // Логика автопереключения
                             withAnimation {
